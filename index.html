@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teaberry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=0">
+    <link rel="stylesheet" href="src/css/animate.min.css">
+    <link rel="stylesheet" href="src/css/slick.css">
+    <link rel="stylesheet" href="src/css/slick-theme.css">
+    <link rel="stylesheet" href="dist/styles/main.min.css">
+<!--    <link rel="stylesheet/less" type="text/css" href="src/less/main.less" />-->
+<!--    <script src="//cdn.jsdelivr.net/npm/less" ></script>-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div id="main">
+    <div id="header">
+        <div id="tea">&#9776;</div>
+        <div id="logo-header">
+            <a href="#main" class="header-menu">
+                <div id="logo-header-image">
+                    <img src="images/logo.png" alt="">
+                </div>
+            </a>
+        </div>
+        <div id="menu">
+        <a href="#stock" class="header-menu active">Ассортимент</a>
+        <a href="#picking" class="header-menu">Как мы собираем чай</a>
+        <a href="#discount" class="header-menu">Наши акции</a>
+        <a href="#properties" class="header-menu">Полезные свойства</a>
+        <a href="#footer" class="header-menu">Контакты</a>
+        </div>
+    </div>
+    <div id="titles">
+        <h1>Эксклюзивный чай <span>из разных уголков планеты</span></h1>
+        <div id="titles-text">
+            У нас вы сможете найти чай со всего мира, <br>самых невообразимых вкусов и ароматов
+        </div>
+        <div class="block-action">
+            <a href="#stock" class="btn">Выбрать чай</a>
+            <div class="block-action-image">
+                <img src="images/tea-icon.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="features">
+    <div class="parallax-window" data-parallax="scroll" data-speed="0.3"
+         data-image-src="images/features-bg-left.png"></div>
+    <h2 class="title-block">Почему выбирают нас?</h2>
+    <div id="features-items">
+        <div class="feature wow animate__rollIn">
+            <div class="radius-outside">
+                <div id="text-up"> Доставка</div>
+                <div class="radius-inside">
+                    <img src="images/feature1.png" alt="">
+                </div>
+                <div id="text-down">в любую точку России</div>
+            </div>
+        </div>
+        <div class="feature wow animate__rollIn">
+            <div class="radius-outside">
+                <div id="text-up-second">Дисконтная программа</div>
+                <div class="radius-inside">
+                    <img src="images/feature2.png" alt="">
+                </div>
+                <div id="text-down-second">и регулярные акции</div>
+            </div>
+        </div>
+        <div class="feature wow animate__rollIn">
+            <div class="radius-outside">
+                <div id="text-up-third">Эксклюзивные</div>
+                <div class="radius-inside">
+                    <img src="images/feature3.png" alt="">
+                </div>
+                <div id="text-down-third">чайные миксы</div>
+            </div>
+        </div>
+        <div class="feature wow animate__rollIn">
+            <div class="radius-outside">
+                <div id="text-up-fourth">Многообразие</div>
+                <div class="radius-inside">
+                    <img src="images/feature4.png" alt="">
+                </div>
+                <div id="text-down-fourth">сортов чая</div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-window" data-parallax="scroll" data-speed="0.3"
+         data-image-src="images/features-bg-right.png"></div>
+</div>
+
+<div id="descriptions">
+    <h2 class="title-block">У нас вы найдете</h2>
+    <div id="description-container">
+        <div class="rellax description-left-bg" data-rellax-speed="-4">
+            <img src="images/description-left-bg.png" alt=""/>
+        </div>
+        <div class="description  wow animate__swing">
+            <div class="description-image">
+                <div class="radius-outside">
+                    <div class="radius-inside">
+                        <img src="images/description1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="description-text">
+                <div class="description-text-title">
+                    Качественный и свежий чай
+                </div>
+                <div class="description-text-content">
+                    Мы завариваем и дегустируем чай<br> снова и снова, пока не найдем<br> идеальный вкус, поэтому в
+                    нашем<br>
+                    каталоге собраны лучшие сорта с<br> самых известных плантаций мира
+                </div>
+            </div>
+        </div>
+        <div class="description wow animate__swing">
+            <div class="description-image">
+                <div class="radius-outside">
+                    <div id="radius-outside-bg">
+                        <img src="images/description2-bg.png" alt="">
+                    </div>
+                    <div class="radius-inside">
+                        <img src="images/description2.png" id="image-description" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="description-text">
+                <div class="description-text-title">
+                    Подарочные наборы
+                </div>
+                <div class="description-text-content">
+                    Мы соберем в красивую упаковку именной<br> подарочный набор для ваших близких,<br> чтобы они
+                    могли по
+                    достоинству оценить<br> вашу заботу и все вкусовые качества<br> нашего чая
+                </div>
+            </div>
+        </div>
+        <div class="description wow animate__swing left">
+            <div class="description-image left">
+                <div class="radius-outside">
+                    <img src="images/description3-bg.png" id="image-description-exclusive" alt="">
+                    <div class="radius-inside">
+                        <img src="images/description3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="description-text">
+                <div class="description-text-title">
+                    Эксклюзивные<br> чайные миксы
+                </div>
+                <div class="description-text-content">
+                    Попробуйте наши миксы,<br> созданные на основе<br> кулинарных тенденций,<br> миксологии и
+                    вдохновения
+                </div>
+            </div>
+        </div>
+        <div class="description wow animate__swing right">
+            <div class="description-image right">
+                <div class="radius-outside">
+                    <div class="radius-inside">
+                        <img src="images/description4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="description-text">
+                <div class="description-text-title">
+                    Чайные аксессуары
+                </div>
+                <div class="description-text-content">
+                    У нас вы найдете всю<br> необходимую посуду для<br> правильного хранения,<br> заваривания и
+                    подачи чая
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="stock">
+    <h2 class="title-block">Наш ассортимент чая</h2>
+    <div id="category-container">
+        <div class="category" data-id="white-tea-container">Белый чай</div>
+        <div class="category" data-id="black-tea-container">Черный чай</div>
+        <div class="category" data-id="green-tea-container">Зеленый чай</div>
+        <div class="category active" data-id="mix-tea-container">Эксклюзивные миксы</div>
+        <div class="category" data-id="ulun-tea-container">Улун</div>
+    </div>
+    <div id="white-tea-container" class="products-container">
+        <div class="products">
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/white1.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Непальский чай
+                    </div>
+                    <div class="product-content-description">
+                        Стандарт сбора – строго почка и два верхних листика.особый, самобытный характер чая и его
+                        харизму.
+                    </div>
+                    <div class="product-content-properties">
+                        100 гр / 450 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/white2.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Бай Хай Инь Чжень
+                    </div>
+                    <div class="product-content-description">
+                        В качестве сырья используются почки с куста сорта Да Бай Ча. Послевкусие долгое, освежающее, с
+                        легкой кислинкой, пряностями и цветами.
+                    </div>
+                    <div class="product-content-properties">
+                        100 гр / 450 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/white3.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Пуэрные почки с молодых деревьев
+                    </div>
+                    <div class="product-content-description">
+                        Для заваривания данного напитка вам потребуется пять грамм чая (две чайные ложки) и гайвань
+                        объемом.
+                    </div>
+                    <div class="product-content-properties">
+                        100 гр / 450 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/white4.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Дянь Хун Сун Чжэнь
+                    </div>
+                    <div class="product-content-description">
+                        Имеет насыщенный, мощный аромат. Во вкусе теплые, медовые оттенки. Дает красивый интенсивный
+                        настой.
+                    </div>
+                    <div class="product-content-properties">
+                        100 гр / 450 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="black-tea-container" class="products-container">
+        <div class="products">
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/black1.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Дянь Хун
+                    </div>
+                    <div class="product-content-description">
+                        В состав чая входят исключительно нежнейшие верхние листочки.
+                        Обладает благородным багряно-коричневым оттенком
+                    </div>
+                    <div class="product-content-properties">
+                        100 гр / 480 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/black2.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Черничный пирог
+                    </div>
+                    <div class="product-content-description">
+                        Прекрасно сочетает в своем вкусе ягодные ароматы, летнее благоухание цветков василька и приятную
+                        терпкость черного чая.
+                    </div>
+                    <div class="product-content-properties">
+                        100 гр / 280 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/black3.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Летняя ягода
+                    </div>
+                    <div class="product-content-description">
+                        Аромат богат всевозможными оттенками. Цвет настоя переливается багрово-терракотовыми оттенками.
+                    </div>
+                    <div class="product-content-properties">
+                        100 гр / 550 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/black4.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Тысяча и одна ночь
+                    </div>
+                    <div class="product-content-description">
+                        Крупнолистовой китайский чай с кусочками ананаса, лепестками розы, ароматизированный натуральным
+                        экстрактом сливы и пассиона.
+                    </div>
+                    <div class="product-content-properties">
+                        100 гр / 380 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/black5.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Кимун первый сбор
+                    </div>
+                    <div class="product-content-description">
+                        Когда за окном холода, он напоминает о тепле летних дней. Воспоминания приходят вместе с мягким
+                        сосновым вкусом этого чая.
+                    </div>
+                    <div class="product-content-properties">
+                        100 гр / 640 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="green-tea-container" class="products-container">
+        <div class="products">
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/green1.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Кабусеча
+                    </div>
+                    <div class="product-content-description">
+                        Букет готового чая яркий, сочный, насыщенный, травянистый, с нотами цветов, орехов и семечек.
+                    </div>
+                    <div class="product-content-properties">
+                        100 гр / 580 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/green2.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Гёкуро премиум
+                    </div>
+                    <div class="product-content-description">
+                        Крайне не простой, впечатляющий, яркий, имеющий свои тонкости и нюансы в приготовлении чай.
+                    </div>
+                    <div class="product-content-properties">
+                        50 гр / 1600 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/green3.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Кокейча
+                    </div>
+                    <div class="product-content-description">
+                        При заваривании, спрессованные чаинки сохраняют свою форму, а чай обладает приятным зеленым
+                        цветом с ароматом свежей зелени.
+                    </div>
+                    <div class="product-content-properties">
+                        50 гр / 360 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/green4.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Лунцзин
+                    </div>
+                    <div class="product-content-description">
+                        Букет готового чая мягкий, сладковатый, сочный, цветочно-травянистый, с тонкими отголосками
+                        свежих тыквенных семечек и орехов.
+                    </div>
+                    <div class="product-content-properties">
+                        50 гр / 300 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mix-tea-container" class="products-container">
+        <div class="products">
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/mix1.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Домашний очаг
+                    </div>
+                    <div class="product-content-description">
+                        Смесь улуна, женьшеня и целебных растений. Тонизирующий чай с ярким живым вкусом и долгим
+                        сладковатым послевкусием.
+                    </div>
+                    <div class="product-content-properties">
+                        100 гр / 410 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/mix2.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Чай со вкусом шампанского
+                    </div>
+                    <div class="product-content-description">
+                        Черный крупнолистовой чай со вкусом шампанского.
+                    </div>
+                    <div class="product-content-properties">
+                        100 гр / 490 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/mix2.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Чай со вкусом шампанского
+                    </div>
+                    <div class="product-content-description">
+                        Черный крупнолистовой чай со вкусом шампанского.
+                    </div>
+                    <div class="product-content-properties">
+                        100 гр / 490 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/mix3.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Сладкий апельсин
+                    </div>
+                    <div class="product-content-description">
+                        Согревающий бленд на основе китайской сенчи и пряной смеси апельсина, корицы и гвоздики.
+                    </div>
+                    <div class="product-content-properties">
+                        100 гр / 450 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ulun-tea-container" class="products-container">
+        <div class="products">
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/ulun1.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Ганьдэ Те Гуань Инь
+                    </div>
+                    <div class="product-content-description">
+                        Букет готового чая благоухающий, утонченный, яркий, с доминирующим цветочным тоном, на фоне
+                        которого раскрываются ноты весенних луговых трав.
+                    </div>
+                    <div class="product-content-properties">
+                        50 гр / 330 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/ulun2.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Лао Цун Шуй Сянь
+                    </div>
+                    <div class="product-content-description">
+                        Мягкий, плавный, интересный и многогранный чай. Будет кстати для чаепитий без спешки и суеты.
+                    </div>
+                    <div class="product-content-properties">
+                        50 гр / 660 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/ulun3.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Белый Петушиный Гребень
+                    </div>
+                    <div class="product-content-description">
+                        Интересный, живой и очень утонченный уишаньский чай. Тот самый чай, когда хочется новых красок в
+                        повседневной жизни.
+                    </div>
+                    <div class="product-content-properties">
+                        100 гр / 2874 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/ulun4.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Ладонь Будды
+                    </div>
+                    <div class="product-content-description">
+                        Прекрасный церемониальный чай для неспешных, внимательных чаепитий. Прекрасно снимает усталость
+                        и напряжение.
+                    </div>
+                    <div class="product-content-properties">
+                        1шт / 680 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/ulun5.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Габа Наньтоу, прессованный.
+                    </div>
+                    <div class="product-content-description">
+                        Послевкусие долгое и объемное, освежающее. Приятный, мягкий по воздействию чай с интересным
+                        букетом.
+                    </div>
+                    <div class="product-content-properties">
+                        50 гр / 840 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/ulun6.png" alt="">
+                </div>
+                <div class="product-content">
+                    <div class="product-content-title">
+                        Прессованный Да Хун Пао
+                    </div>
+                    <div class="product-content-description">
+                        Качественный утёсный улун глубокой степени ферментации и прожарки.
+                    </div>
+                    <div class="product-content-properties">
+                        10 гр / 120 руб.
+                    </div>
+                    <div class="block-action">
+                        <button class="btn open-modal">Купить</button>
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="discount">
+    <div id="discount-container" class="wow animate__zoomIn">
+        <div class="rellax discount-bg">
+            <img src="images/discount-bg.png" alt="">
+        </div>
+        <div id="bg-discount-left">
+            <img src="images/bg-discount-left.png" alt="">
+        </div>
+        <div class="title-block">
+            Акция для новых клиентов
+        </div>
+        <div id="discount-description">
+            <div id="discount-image">
+                <img src="images/discount-tea.png" alt="">
+            </div>
+            <div id="discount-content">
+                <div id="discount-content-text">
+                    <div>Дарим скидку <span>&nbsp;5%&nbsp;</span> на первый заказ!</div>
+                    <div>Скопируйте промокод из письма и ставьте чайник</div>
+                </div>
+                <form action="promo.php" method="post" id="discount-promo">
+                    <div id="promo-message">Мы отправили промокод на указанную почту.</div>
+                    <div id="discount-content-actions" class="mail-sent">
+                        <div>
+                            <input type="text" placeholder="example@gmail.com" name="email" id="mail">
+                            <div class="input-error mail">Ваш e-mail указан неверно</div>
+                        </div>
+                    </div>
+                </form>
+                <div class="block-action mail-sent" id="discount-action">
+                    <button type="submit" class="btn">Получить скидку</button>
+                    <div class="block-action-image">
+                        <img src="images/tea-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="properties">
+    <div id="properties-container">
+        <div class="rellax properties-main" data-rellax-speed="-4">
+            <img src="images/properties-main.png" alt=""/>
+        </div>
+        <h2 class="title-block">Полезные свойства чая</h2>
+        <div id="properties-content" class="wow animate__pulse">
+            <div id="properties-content-image">
+                <img src="images/properties-bg.png" alt="">
+            </div>
+            <div class="properties-items big">
+                <div class="point-radius">
+                    <div class="point big">
+                        <img src="images/circle.png" alt="">
+                    </div>
+                </div>
+                <div class="figure big">
+                    <div class="figure-text">Чай богат полезными микроэлементами</div>
+                    <img src="images/figure1.png" class="figure-img" alt="">
+                </div>
+            </div>
+            <div class="properties-items second big">
+                <div class="point-radius">
+                    <div class="point">
+                        <img src="images/circle.png" alt="">
+                    </div>
+                </div>
+                <div class="figure second big">
+                    <div class="figure-text second">Чай бодрит дух, повышает активность мозга, улучшает память</div>
+                    <img src="images/figure2.png" class="figure-img" alt="">
+                </div>
+            </div>
+            <div class="properties-items third big">
+                <div class="point-radius">
+                    <div class="point">
+                        <img src="images/circle.png" alt="">
+                    </div>
+                </div>
+                <div class="figure third big">
+                    <div class="figure-text third">Чай нормализует деятельность сердца, кровеносных сосудов,
+                        пищеварительной системы
+                    </div>
+                    <img src="images/figure3.png" class="figure-img" alt="">
+                </div>
+            </div>
+            <div class="properties-items fourth big">
+                <div class="point-radius">
+                    <div class="point big">
+                        <img src="images/circle.png" alt="">
+                    </div>
+                </div>
+                <div class="figure fourth big">
+                    <div class="figure-text fourth">Чай подавляет рост злокачественных опухолей, и существенно снижает
+                        риск
+                        перерождения клеток в раковые
+                    </div>
+                    <img src="images/figure4.png" class="figure-img" alt="">
+                </div>
+            </div>
+            <div class="properties-items fifth big">
+                <div class="point-radius">
+                    <div class="point">
+                        <img src="images/circle.png" alt="">
+                    </div>
+                </div>
+                <div class="figure fourth">
+                    <div class="figure-text fifth">Чай снимает усталость и стимулирует обмен веществ</div>
+                    <img src="images/figure5.png" class="figure-img" alt="">
+                </div>
+            </div>
+            <div class="properties-items sixth big">
+                <div class="point-radius">
+                    <div class="point">
+                        <img src="images/circle.png" alt="">
+                    </div>
+                </div>
+                <div class="figure fourth">
+                    <div class="figure-text fifth different">Чай эффективно предотвращает кариес</div>
+                    <img src="images/figure5.png" class="figure-img" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="picking">
+    <div id="picking-container">
+        <h2 class="title-block">Как мы собираем наш чай</h2>
+        <div id="picking-info">
+            <div id="picking-info-video">
+                <iframe width="714" height="477" style="border-radius: 35px"
+                        src="https://www.youtube.com/embed/dDu-piWKaq8" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                <div id="tea-icon">
+                    <img src="images/tea-icon.png" alt="">
+                </div>
+            </div>
+            <div id="picking-info-content">
+                <div class="picking-info-text">Чайные листочки мы собираем столько раз в году, сколько раз чай
+                    вегетирует – то есть, дает новые побеги
+                    с листочками. В <span>Индонезии, Шри-Ланке, Кении</span>, на юге <span>Индии</span> и
+                    <span>Китая</span>, где всегда лето – круглый год.
+                </div>
+                <div class="picking-info-text">Чем дальше на север расположены плантации, тем меньше сезон сбора чая – в
+                    северо-восточной Индии он
+                    продолжается восемь месяцев, на севере Китая чайные листья собирают не более четырех раз в году, с
+                    апреля по сентябрь.
+                </div>
+                <div class="picking-info-text">Мы <span>собираем чай вручную</span>, обрывая не все листья, а лишь
+                    несколько самых молодых и сочных листочков с
+                    частью стебелька, на котором они укреплены, и так называемую почку (или типс) – нераспустившийся
+                    листок
+                    на кончике побега. Всё для того, чтобы вы пили только <span>самый вкусный и свежий чай!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div id="footer-container">
+        <div id="logo">
+            <a href="#"><img src="images/logo.png" alt=""></a>
+        </div>
+        <div id="addresses">
+            <div class="footer-title">
+                Пункты самовывоза:
+            </div>
+            <div id="addresses-items">
+                <div class="footer-text">г. Москва, Люберцы, ул. Озерная, 5</div>
+                <div class="footer-text">г. Москва, ТЦ «Метрополь», 2 этаж</div>
+                <div class="footer-text">г. Москва, пр-т Некрасова, 25</div>
+            </div>
+        </div>
+        <div id="time-work">
+            <div class="footer-title">
+                Режим работы:
+            </div>
+            <div id="time-work-items">
+                <div class="footer-text">Пн-Пт с 10:00 до 20:00</div>
+                <div class="footer-text">Сб-Вс с 10:00 до 18:00</div>
+            </div>
+        </div>
+        <div id="footer-phone">
+            <div class="footer-title">
+                Телефоны:
+            </div>
+            <div id="phone-items">
+                <div class="footer-text">+7 (495) 384-66-76</div>
+                <div class="footer-text">+7 (495) 584-76-86</div>
+            </div>
+        </div>
+        <div id="icons">
+            <a href="https://www.instagram.com/teaberry" target="_blank"><img src="images/instagram.png" alt=""></a>
+            <a href="https://www.facebook.com/teaberry" target="_blank"><img src="images/facebook.png" alt=""></a>
+            <a href="https://www.youtube.com/teaberry" target="_blank"><img src="images/youtube.png" alt=""></a>
+        </div>
+        <div id="big-tea">
+            <img src="images/big-tea.png" alt="">
+        </div>
+    </div>
+    <div id="footer-bottom">
+        <div class="footer-item">Разработка сайта: студия Designer</div>
+        <div class="footer-item">Все права защищены, 2020</div>
+    </div>
+</div>
+
+<div id="reservation-container">
+    <div id="reservation">
+        <div id="reservation-cancel">
+            <img src="images/close.png" id="reservation-cancel-close" alt="">
+        </div>
+        <div id="reservation-content-first">
+            <div id="reservation-content">
+                <div id="reservation-content-image">
+                    <img src="images/reservation-bg.png" alt="">
+                </div>
+                <div id="reservation-content-form">
+                    <h2 class="title-block">Оформление заказа</h2>
+                    <form action="mail.php" method="post" id="reserve">
+                        <div class="reserve-input">
+                            <input type="text" placeholder="Ваш заказ" name="order-title" id="order-title">
+                            <div class="input-error order-title">Указажите именование товара</div>
+                        </div>
+                        <div class="reserve-input">
+                            <input type="text" placeholder="Кол-во грамм" name="count" id="count">
+                            <div class="input-error count">Колличество товара</div>
+                        </div>
+                        <div class="reserve-input">
+                            <input type="text" placeholder="Ваше имя" name="name" id="name">
+                            <div class="input-error name">Укажите Ваше имя</div>
+                        </div>
+                        <div class="reserve-input">
+                            <input type="tel" placeholder="Ваш телефон" name="phone" id="phone">
+                            <div class="input-error phone">Укажите ваш номер телефона</div>
+                        </div>
+                    </form>
+                    <div class="block-action" id="reserve-button">
+                        <button type="submit" class="btn">Оформить заказ</button>
+                        <div class="block-action-image">
+                            <img src="images/tea-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="reservation-sent">
+            <h2 class="title-block">Спасибо!</h2>
+            <div id="reservation-sent-text">Мы начали собирать ваш заказ. Наш менеджер свяжется с вами в течение 15
+                минут.
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/rellax.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/jquery.arctext.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
