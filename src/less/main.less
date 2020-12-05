@@ -52,6 +52,10 @@ body {
     justify-content: start;
     align-items: center;
     padding: 40px 0 18px 0;
+    #menu-close{
+      display: none;
+    }
+
     a {
       font-size: 16px;
       color: @text-color;
@@ -156,12 +160,23 @@ h1 {
 
 #features {
   .container ();
-
   #features-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 70px 0 160px 0;
+    position: relative;
+    #features-bg-right {
+      position: absolute;
+      top: -95px;
+      right: -112px;
+    }
+    #features-bg-left {
+      top: -68px;
+      right: 733px;
+      position: absolute;
+    }
+
     #text-down {
       position: absolute;
       right: 23px;
@@ -241,10 +256,6 @@ h1 {
   width: 215px;
   height: 215px;
   position: relative;
-  transition: all .8s ease;
-  &:hover {
-    transform: scaleX(1.05);
-  }
 }
 
 #descriptions {
@@ -369,23 +380,23 @@ h1 {
   border-radius: 33px;
   background-color: @second-color;
   box-shadow: 0 0 15.39px 2.61px rgba(180, 179, 171, 0.4);
-  height: 315px;
-  width: 525px;
+  width: 528px;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  padding: 40px 30px;
-  box-sizing: border-box;
   outline: 0;
+  font-size: 15px;
   opacity: 0.5;
-  margin: 0 28px;
+  padding: 42px 33px;
+  margin: 60px 80px;
+  box-sizing: border-box;
   .product-image {
-    width: 210px;
-    height: 210px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-right: 30px;
+    width: 249px;
+    height: 249px;
     overflow: hidden;
+    margin-right: 40px;
     img {
       max-width: 100%;
       max-height: 100%;
@@ -393,7 +404,7 @@ h1 {
   }
 
   .product-content {
-    width: 165px;
+    width: 170px;
 
     .product-content-title {
       font-size: 15px;
@@ -438,32 +449,33 @@ h1 {
 
 .products .slick-center.product {
   opacity: 1;
-  transform: scale(1.09);
+  transform: scale(1.22);
+  position: relative;
 }
 
 #stock .slick-next {
-  right: 630px;
+  right: 568px;
   &:before {
     content: url("../../images/right.png");
   }
 }
 
 #stock .slick-prev {
-  left: 625px;
-  z-index: 4;
+  left: 560px;
+  z-index: 1;
   &:before {
     content: url("../../images/left.png");
   }
 }
 
 #stock .slick-dots li.slick-active button:before {
-  border-bottom: 5px solid @third-color;
+  content: url("../../images/dots-active.png");
 }
 
 #stock .slick-dots li button:hover:before,
 #stock .slick-dots li button:focus:before {
+  content: url("../../images/dots-active.png");
   opacity: 1;
-  border-bottom: 5px solid @third-color;
   width: 30px;
 }
 
@@ -475,18 +487,14 @@ h1 {
 
   button {
     &:before {
+      content: url("../../images/dots-passive.png");
       font-size: 0;
-      border-bottom: 5px solid #e1e0df;
       height: 0;
       line-height: 0;
       opacity: 1;
       width: 30px;
     }
   }
-}
-
-#stock .slick-track {
-  padding: 35px 0;
 }
 
 #white-tea-container, #black-tea-container, #green-tea-container, #ulun-tea-container {
@@ -726,6 +734,7 @@ h1 {
           .figure-text {
             position: absolute;
             font-size: 18px;
+            line-height: 23px;
             color: @text-color;
             &.second {
               width: 250px;
@@ -766,6 +775,7 @@ h1 {
   #picking-container {
     width: 1200px;
     margin: 0 auto 240px auto;
+    position: relative;
     .title-block {
       margin: 0 0 65px;
     }
@@ -863,8 +873,19 @@ h1 {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      a:hover {
-        opacity: 0.9;
+      a {
+        svg{
+          width: 40px;
+          fill: #80a506;
+          }
+
+        &:nth-child(3) svg{
+            width: 53px;
+        }
+
+        &:hover svg{
+          fill: #4c5f07;
+        }
       }
     }
 
@@ -1002,11 +1023,6 @@ h1 {
   font-size: 11px;
   color: red;
   display: none;
-}
-
-.parallax-window {
-  min-height: 350px;
-  background: transparent;
 }
 
 @import 'adaptive';

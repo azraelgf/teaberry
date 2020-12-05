@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="src/css/slick.css">
     <link rel="stylesheet" href="src/css/slick-theme.css">
     <link rel="stylesheet" href="dist/styles/main.min.css">
-<!--    <link rel="stylesheet/less" type="text/css" href="src/less/main.less" />-->
-<!--    <script src="//cdn.jsdelivr.net/npm/less" ></script>-->
+    <!--    <link rel="stylesheet/less" type="text/css" href="src/less/main.less" />-->
+    <!--    <script src="//cdn.jsdelivr.net/npm/less" ></script>-->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -24,11 +24,12 @@
             </a>
         </div>
         <div id="menu">
-        <a href="#stock" class="header-menu active">Ассортимент</a>
-        <a href="#picking" class="header-menu">Как мы собираем чай</a>
-        <a href="#discount" class="header-menu">Наши акции</a>
-        <a href="#properties" class="header-menu">Полезные свойства</a>
-        <a href="#footer" class="header-menu">Контакты</a>
+            <a href="#stock" class="header-menu">Ассортимент</a>
+            <a href="#picking" class="header-menu">Как мы собираем чай</a>
+            <a href="#discount" class="header-menu">Наши акции</a>
+            <a href="#properties" class="header-menu">Полезные свойства</a>
+            <a href="#footer" class="header-menu">Контакты</a>
+            <div id="menu-close">&#215;</div>
         </div>
     </div>
     <div id="titles">
@@ -46,10 +47,10 @@
 </div>
 
 <div id="features">
-    <div class="parallax-window" data-parallax="scroll" data-speed="0.3"
-         data-image-src="images/features-bg-left.png"></div>
     <h2 class="title-block">Почему выбирают нас?</h2>
     <div id="features-items">
+        <div id="features-bg-left"><img src="images/features-bg-left.png" alt=""></div>
+        <div id="features-bg-right"><img src="images/features-bg-right.png" alt=""></div>
         <div class="feature wow animate__rollIn">
             <div class="radius-outside">
                 <div id="text-up"> Доставка</div>
@@ -86,9 +87,6 @@
                 <div id="text-down-fourth">сортов чая</div>
             </div>
         </div>
-    </div>
-    <div class="parallax-window" data-parallax="scroll" data-speed="0.3"
-         data-image-src="images/features-bg-right.png">
     </div>
 </div>
 
@@ -191,6 +189,7 @@
     <div id="white-tea-container" class="products-container">
         <div class="products">
             <div class="product">
+                <div class="prev"></div>
                 <div class="product-image">
                     <img src="images/white1.png" alt="">
                 </div>
@@ -735,75 +734,76 @@
             <div id="properties-content-image">
                 <img src="images/properties-bg.png" alt="">
             </div>
-            <div class="properties-items big">
-                <div class="point-radius">
-                    <div class="point big">
-                        <img src="images/circle.png" alt="">
+            <div id="items">
+                <div class="properties-items big">
+                    <div class="point-radius">
+                        <div class="point big">
+                            <img src="images/circle.png" alt="">
+                        </div>
+                    </div>
+                    <div class="figure big">
+                        <div class="figure-text">Чай богат полезными микроэлементами</div>
+                        <img src="images/figure1.png" class="figure-img" alt="">
                     </div>
                 </div>
-                <div class="figure big">
-                    <div class="figure-text">Чай богат полезными микроэлементами</div>
-                    <img src="images/figure1.png" class="figure-img" alt="">
-                </div>
-            </div>
-            <div class="properties-items second big">
-                <div class="point-radius">
-                    <div class="point">
-                        <img src="images/circle.png" alt="">
+                <div class="properties-items second big">
+                    <div class="point-radius">
+                        <div class="point">
+                            <img src="images/circle.png" alt="">
+                        </div>
+                    </div>
+                    <div class="figure second big">
+                        <div class="figure-text second">Чай бодрит дух, повышает активность мозга, улучшает память</div>
+                        <img src="images/figure2.png" class="figure-img" alt="">
                     </div>
                 </div>
-                <div class="figure second big">
-                    <div class="figure-text second">Чай бодрит дух, повышает активность мозга, улучшает память</div>
-                    <img src="images/figure2.png" class="figure-img" alt="">
-                </div>
-            </div>
-            <div class="properties-items third big">
-                <div class="point-radius">
-                    <div class="point">
-                        <img src="images/circle.png" alt="">
+                <div class="properties-items third big">
+                    <div class="point-radius">
+                        <div class="point">
+                            <img src="images/circle.png" alt="">
+                        </div>
+                    </div>
+                    <div class="figure third big">
+                        <div class="figure-text third">Чай нормализует деятельность сердца, кровеносных сосудов,
+                            пищеварительной системы
+                        </div>
+                        <img src="images/figure3.png" class="figure-img" alt="">
                     </div>
                 </div>
-                <div class="figure third big">
-                    <div class="figure-text third">Чай нормализует деятельность сердца, кровеносных сосудов,
-                        пищеварительной системы
+                <div class="properties-items fourth big">
+                    <div class="point-radius">
+                        <div class="point big">
+                            <img src="images/circle.png" alt="">
+                        </div>
                     </div>
-                    <img src="images/figure3.png" class="figure-img" alt="">
-                </div>
-            </div>
-            <div class="properties-items fourth big">
-                <div class="point-radius">
-                    <div class="point big">
-                        <img src="images/circle.png" alt="">
-                    </div>
-                </div>
-                <div class="figure fourth big">
-                    <div class="figure-text fourth">Чай подавляет рост злокачественных опухолей, и существенно снижает
-                        риск
-                        перерождения клеток в раковые
-                    </div>
-                    <img src="images/figure4.png" class="figure-img" alt="">
-                </div>
-            </div>
-            <div class="properties-items fifth big">
-                <div class="point-radius">
-                    <div class="point">
-                        <img src="images/circle.png" alt="">
+                    <div class="figure fourth big">
+                        <div class="figure-text fourth">Чай подавляет рост злокачественных опухолей, и существенно
+                            снижает риск перерождения клеток в раковые
+                        </div>
+                        <img src="images/figure4.png" class="figure-img" alt="">
                     </div>
                 </div>
-                <div class="figure fourth">
-                    <div class="figure-text fifth">Чай снимает усталость и стимулирует обмен веществ</div>
-                    <img src="images/figure5.png" class="figure-img" alt="">
-                </div>
-            </div>
-            <div class="properties-items sixth big">
-                <div class="point-radius">
-                    <div class="point">
-                        <img src="images/circle.png" alt="">
+                <div class="properties-items fifth big">
+                    <div class="point-radius">
+                        <div class="point">
+                            <img src="images/circle.png" alt="">
+                        </div>
+                    </div>
+                    <div class="figure fourth">
+                        <div class="figure-text fifth">Чай снимает усталость и стимулирует обмен веществ</div>
+                        <img src="images/figure5.png" class="figure-img" alt="">
                     </div>
                 </div>
-                <div class="figure fourth">
-                    <div class="figure-text fifth different">Чай эффективно предотвращает кариес</div>
-                    <img src="images/figure5.png" class="figure-img" alt="">
+                <div class="properties-items sixth big">
+                    <div class="point-radius">
+                        <div class="point">
+                            <img src="images/circle.png" alt="">
+                        </div>
+                    </div>
+                    <div class="figure fourth">
+                        <div class="figure-text fifth different">Чай эффективно предотвращает кариес</div>
+                        <img src="images/figure5.png" class="figure-img" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -879,9 +879,33 @@
             </div>
         </div>
         <div id="icons">
-            <a href="https://www.instagram.com/teaberry" target="_blank"><img src="images/instagram.png" alt=""></a>
-            <a href="https://www.facebook.com/teaberry" target="_blank"><img src="images/facebook.png" alt=""></a>
-            <a href="https://www.youtube.com/teaberry" target="_blank"><img src="images/youtube.png" alt=""></a>
+            <a href="https://www.instagram.com/teaberry" target="_blank">
+                <svg viewBox="0 0 512.00096 512.00096" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm108.578125 373.410156c0 59.867188-48.707031 108.574219-108.578125 108.574219h-234.8125c-59.871094 0-108.578125-48.707031-108.578125-108.574219v-234.816406c0-59.871094 48.707031-108.578125 108.578125-108.578125h234.816406c59.867188 0 108.574219 48.707031 108.574219 108.578125zm0 0"/>
+                    <path d="m256 116.003906c-77.195312 0-139.996094 62.800782-139.996094 139.996094s62.800782 139.996094 139.996094 139.996094 139.996094-62.800782 139.996094-139.996094-62.800782-139.996094-139.996094-139.996094zm0 249.976563c-60.640625 0-109.980469-49.335938-109.980469-109.980469 0-60.640625 49.339844-109.980469 109.980469-109.980469 60.644531 0 109.980469 49.339844 109.980469 109.980469 0 60.644531-49.335938 109.980469-109.980469 109.980469zm0 0"/>
+                    <path d="m399.34375 66.285156c-22.8125 0-41.367188 18.558594-41.367188 41.367188 0 22.8125 18.554688 41.371094 41.367188 41.371094s41.371094-18.558594 41.371094-41.371094-18.558594-41.367188-41.371094-41.367188zm0 52.71875c-6.257812 0-11.351562-5.09375-11.351562-11.351562 0-6.261719 5.09375-11.351563 11.351562-11.351563 6.261719 0 11.355469 5.089844 11.355469 11.351563 0 6.257812-5.09375 11.351562-11.355469 11.351562zm0 0"/>
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/teaberry" target="_blank">
+                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m75 512h167v-182h-60v-60h60v-75c0-41.355469 33.644531-75 75-75h75v60h-60c-16.542969 0-30 13.457031-30 30v60h87.292969l-10 60h-77.292969v182h135c41.355469 0 75-33.644531 75-75v-362c0-41.355469-33.644531-75-75-75h-362c-41.355469 0-75 33.644531-75 75v362c0 41.355469 33.644531 75 75 75zm-45-437c0-24.8125 20.1875-45 45-45h362c24.8125 0 45 20.1875 45 45v362c0 24.8125-20.1875 45-45 45h-105v-122h72.707031l20-120h-92.707031v-30h90v-120h-105c-57.898438 0-105 47.101562-105 105v45h-60v120h60v122h-137c-24.8125 0-45-20.1875-45-45zm0 0"/>
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/teaberry" class="icon-youtube" target="_blank">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49"
+                     style="enable-background:new 0 0 49 49;" xml:space="preserve">
+                        <g>
+	                        <g>
+            		            <path d="M39.256,6.5H9.744C4.371,6.5,0,10.885,0,16.274v16.451c0,5.39,4.371,9.774,9.744,9.774h29.512
+        			                    c5.373,0,9.744-4.385,9.744-9.774V16.274C49,10.885,44.629,6.5,39.256,6.5z M47,32.726c0,4.287-3.474,7.774-7.744,7.774H9.744
+	        		                    C5.474,40.5,2,37.012,2,32.726V16.274C2,11.988,5.474,8.5,9.744,8.5h29.512c4.27,0,7.744,3.488,7.744,7.774V32.726z"/>
+                                <path d="M33.36,24.138l-13.855-8.115c-0.308-0.18-0.691-0.183-1.002-0.005S18,16.527,18,16.886v16.229
+			                             c0,0.358,0.192,0.69,0.502,0.868c0.154,0.088,0.326,0.132,0.498,0.132c0.175,0,0.349-0.046,0.505-0.137l13.855-8.113
+			                             c0.306-0.179,0.495-0.508,0.495-0.863S33.667,24.317,33.36,24.138z M20,31.37V18.63l10.876,6.371L20,31.37z"/>
+                            </g>
+                        </g>
+                </svg>
+            </a>
         </div>
         <div id="big-tea">
             <img src="images/big-tea.png" alt="">
@@ -944,7 +968,6 @@
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/rellax.min.js"></script>
-<script src="js/parallax.min.js"></script>
 <script src="js/jquery.arctext.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>

@@ -1,9 +1,9 @@
 'use strict'
 $(document).ready(function () {
-    $('#text-down').arctext({radius: 93, dir: -1});
+    $('#text-down').arctext({radius: 95, dir: -1});
     $('#text-up').arctext({radius: 80});
     $('#text-down-second').arctext({radius: 93, dir: -1});
-    $('#text-up-second').arctext({radius: 80});
+    $('#text-up-second').arctext({radius: 95});
     $('#text-down-third').arctext({radius: 93, dir: -1});
     $('#text-up-third').arctext({radius: 90});
     $('#text-down-fourth').arctext({radius: 102, dir: -1});
@@ -32,23 +32,15 @@ $(document).ready(function () {
         dots: true,
         arrows: true,
         centerMode: true,
+        variableWidth: true,
         slidesToShow: 3,
         responsive: [
             {
-                breakpoint: 900,
+                breakpoint: 600,
                 settings: {
-                    arrows: false,
-                    centerMode: false,
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 580,
-                settings: {
-                    arrows: false,
                     centerMode: true,
-                    centerPadding: '40px',
                     slidesToShow: 1,
+                    variableWidth: false
                 }
             }
         ],
@@ -57,23 +49,15 @@ $(document).ready(function () {
         dots: true,
         arrows: true,
         centerMode: true,
+        variableWidth: true,
         slidesToShow: 3,
         responsive: [
             {
-                breakpoint: 900,
+                breakpoint: 600,
                 settings: {
-                    arrows: false,
-                    centerMode: false,
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 580,
-                settings: {
-                    arrows: false,
                     centerMode: true,
-                    centerPadding: '40px',
                     slidesToShow: 1,
+                    variableWidth: false
                 }
             }
         ],
@@ -82,23 +66,15 @@ $(document).ready(function () {
         dots: true,
         arrows: true,
         centerMode: true,
+        variableWidth: true,
         slidesToShow: 3,
         responsive: [
             {
-                breakpoint: 900,
+                breakpoint: 600,
                 settings: {
-                    arrows: false,
-                    centerMode: false,
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 580,
-                settings: {
-                    arrows: false,
                     centerMode: true,
-                    centerPadding: '20px',
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    variableWidth: false
                 }
             }
         ]
@@ -107,24 +83,16 @@ $(document).ready(function () {
         dots: true,
         arrows: true,
         centerMode: true,
+        variableWidth: true,
         slidesToShow: 3,
         infinite: true,
         responsive: [
             {
-                breakpoint: 900,
+                breakpoint: 600,
                 settings: {
-                    arrows: false,
-                    centerMode: false,
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 580,
-                settings: {
-                    arrows: false,
                     centerMode: true,
-                    centerPadding: '20px',
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    variableWidth: false
                 }
             }
         ]
@@ -133,23 +101,15 @@ $(document).ready(function () {
         dots: true,
         arrows: true,
         centerMode: true,
+        variableWidth: true,
         slidesToShow: 3,
         responsive: [
             {
-                breakpoint: 900,
+                breakpoint: 600,
                 settings: {
-                    arrows: false,
-                    centerMode: false,
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 580,
-                settings: {
-                    arrows: false,
                     centerMode: true,
-                    centerPadding: '20px',
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    variableWidth: false
                 }
             }
         ]
@@ -257,7 +217,7 @@ $(document).ready(function () {
     $('#tea').click(() => {
         $('#header').toggleClass('menu-open');
     });
-    $('#header #menu a').click(() => {
+    $('#header #menu a, #menu-close').click(() => {
         $('#header').toggleClass('menu-open');
     });
 
