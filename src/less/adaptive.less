@@ -708,8 +708,9 @@
 
 @media screen and (max-width: 850px) {
   #main #logo-header #logo-header-image {
-    left: 40%;
-    top: 75px;
+    position: static;
+    padding-top:  20px;
+    text-align: center;
   }
 
   #main #menu a:nth-child(3) {
@@ -717,6 +718,7 @@
   }
 
   #main #menu {
+    flex-basis: 100%;
     justify-content: center;
     padding: 20px 0 0 0;
   }
@@ -1007,23 +1009,34 @@
     font-size: 20px;
   }
 
-  #main #header #logo-header-image {
-    top: 13px;
-  }
-
   #main #header #menu a:nth-child(3) {
     margin-right: 0;
   }
 
-  #main #header #tea {
-    display: block;
-    font-size: 65px;
-    line-height: 65px;
-    position: absolute;
-    top: 16px;
-    left: 15%;
-    color: #8fbc62;
-    z-index: 10;
+  h1{
+    padding-top: 75px;
+  }
+
+  #main #header{
+    padding-left: 20px;
+    padding-right: 20px;
+    #logo-header{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding-top: 20px;
+      #logo-header-image{
+        padding-top: 0;
+      }
+
+      #tea {
+        display: inline-flex;
+        font-size: 65px;
+        line-height: 65px;
+        color: #8fbc62;
+        z-index: 10;
+      }
+    }
   }
 
   #main #header #tea:hover #tea {
@@ -1053,7 +1066,6 @@
 
 /*480-579*/
 @media screen and (max-width: 579px) {
-
   #picking #picking-container #picking-info {
     #picking-info-content {
       width: 410px;
@@ -1199,10 +1211,6 @@
 }
 
 @media screen and (max-width: 510px) {
-  #main #header #logo-header-image {
-    left: 255px;
-  }
-
   #descriptions #description-container .description {
     position: relative;
   }
@@ -1279,12 +1287,6 @@
   #main {
     height: 560px;
     background-size: cover;
-
-    #header {
-      #tea {
-        left: 10%;
-      }
-    }
 
     #titles {
       #titles-text {
@@ -1365,10 +1367,6 @@
 }
 
 @media screen and (max-width: 450px) {
-  #main #header #logo-header-image {
-    left: 150px;
-  }
-
   #main #titles-text br {
     display: none;
   }
